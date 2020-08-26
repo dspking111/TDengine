@@ -187,6 +187,7 @@ void insertData() {
     pthread_join(pInfo[i].thread, NULL);
   }
 
+
   gettimeofday(&systemTime, NULL);
   et = systemTime.tv_sec * 1000000 + systemTime.tv_usec;
   double seconds = (et - st) / 1000.0 / 1000.0;
